@@ -1,0 +1,14 @@
+1.if the speed is too fast, it will through the wall
+2.a better friction 
+3.angular friction
+6.Edge collide
+7.edge vs polygon is not so correct
+8.ridgidbody with rod behave not correct
+
+solved:
+1.A ball fall down to ground, if the ball'speed is close to zero, it will
+ 	snowly go through the ground.
+2.run a fixed time, core dumped: The new Manifold() is not good because we 
+	assume we have two rigidbody for all the method in Manifold class
+3.rod's len will change: use correct pos
+4.sleep: Check force and velocity
